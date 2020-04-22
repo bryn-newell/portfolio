@@ -1,26 +1,30 @@
 <template>
   <div class="main" :style="{backgroundImage: `url(${bg})`}">
-    <h1 class="header">bryn newell</h1>
-    <p>description</p>
-    <div class="social-links">
-      <a href="https://github.com/bryn-newell" target="_blank">
-        <img :src="github" alt="Github" class="logo">
-      </a>
-      <a href="https://twitter.com/bryn_newell" target="_blank">
-        <twitter class="logo" />
-      </a>
-      <a href="https://medium.com/@bryn.newell" target="_blank">
-        <medium class="logo" />
-      </a>
-      <a href="https://www.linkedin.com/in/bryn-newell/" target="_blank">
-        <linkedin class="logo" />
-      </a>
+    <div class="content">
+      <h1 class="header">bryn newell —</h1>
+      <div class="desc-container">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+        <div class="social-links">
+          <a href="https://github.com/bryn-newell" target="_blank">
+            <img :src="github" alt="Github" class="logo">
+          </a>
+          <a href="https://twitter.com/bryn_newell" target="_blank">
+            <twitter class="logo" />
+          </a>
+          <a href="https://medium.com/@bryn.newell" target="_blank">
+            <medium class="logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/bryn-newell/" target="_blank">
+            <linkedin class="logo" />
+          </a>
+        </div>
+      </div>
+      <ul class="section-list">
+        <li>Blog</li>
+        <li>Projects</li>
+        <li>Resume/CV</li>
+      </ul>
     </div>
-    <ul class="section-list">
-      <li>Blog</li>
-      <li>Projects</li>
-      <li>Resume/CV</li>
-    </ul>
   </div>
 </template>
 
@@ -49,29 +53,60 @@ export default {
 
 <style lang="scss">
   .main {
-    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 100vh;
     width: 100vw;
 
-    h1, ul {
-      font-family: 'le murmure';
+    .content {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+
+      h1, ul {
+        font-family: 'le murmure';
+      }
+
+      .header {
+        font-size: 8rem;
+        margin: 0;
+      }
+      .desc-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        max-width: 35%;
+
+        .description {
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        .social-links {
+          a {
+            margin: 0 .75rem;
+          }
+          :first-child {
+            margin-left: 0;
+          }
+
+          .logo {
+            height: 2rem;
+          }
+        }
+      }
+
+      .section-list {
+        font-size: 3rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
     }
 
-    .header {
-      font-size: 6rem;
-      margin: 0;
-    }
-
-    .logo {
-      height: 30px;
-    }
-
-    .section-list {
-      font-size: 3rem;
-      list-style-type: none;
-    }
   }
 </style>

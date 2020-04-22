@@ -42,7 +42,9 @@
     "plugins": [
       "vue-a11y"
     ],
-    "rules": {}
+    "rules": {
+      "max-len": "off"
+    }
   },
   "browserslist": [
     "> 1%",
