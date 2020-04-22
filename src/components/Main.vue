@@ -12,7 +12,6 @@
       <a href="">
         <medium class="logo" />
       </a>
-
     </div>
     <ul>
       <li>Blog</li>
@@ -23,23 +22,24 @@
 </template>
 
 <script>
-import bg from '@/assets/mainBG.jpg'
-import github from '@/assets/github.png'
-import medium from '@/components/medium'
-import twitter from '@/components/twitter'
+import bg from '@/assets/mainBG.jpg';
+import github from '@/assets/github.png';
+import medium from '@/components/medium.vue';
+import twitter from '@/components/twitter.vue';
+
 export default {
   name: 'Main',
   components: {
     medium,
-    twitter
+    twitter,
   },
-  data () {
+  data() {
     return {
       bg,
-      github
-    }
-  }
-}
+      github,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
