@@ -1,5 +1,6 @@
 <template>
     <svg viewBox="0 0 195 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Medium</title>
         <defs></defs>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Monogram" fill-rule="nonzero">

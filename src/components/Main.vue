@@ -1,7 +1,7 @@
 <template>
   <div class="main" :style="{backgroundImage: `url(${bg})`}">
     <div class="content">
-      <h1 class="header">bryn newell —</h1>
+      <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
       <div class="desc-container">
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
         <div class="social-links">
@@ -31,9 +31,9 @@
 <script>
 import bg from '@/assets/mainBG.jpg';
 import github from '@/assets/github.png';
-import medium from '@/components/medium.vue';
-import twitter from '@/components/twitter.vue';
-import linkedin from '@/components/linkedin.vue';
+import medium from '@/assets/medium.vue';
+import twitter from '@/assets/twitter.vue';
+import linkedin from '@/assets/linkedin.vue';
 
 export default {
   name: 'Main',
@@ -74,6 +74,12 @@ export default {
       .header {
         font-size: 8rem;
         margin: 0;
+
+        @media (max-width: 1052px) {
+          .decoration {
+            display: none;
+          }
+        }
       }
       .desc-container {
         align-items: flex-start;
