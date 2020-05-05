@@ -36,83 +36,83 @@ import twitter from '@/assets/twitter.vue';
 import linkedin from '@/assets/linkedin.vue';
 
 export default {
-  name: 'Main',
-  components: {
-    medium,
-    twitter,
-    linkedin,
-  },
-  data() {
-    return {
-      bg,
-      github,
-    };
-  },
+	name: 'Main',
+	components: {
+		medium,
+		twitter,
+		linkedin,
+	},
+	data() {
+		return {
+			bg,
+			github,
+		};
+	},
 };
 </script>
 
 <style lang="scss">
-  .main {
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100vh;
-    width: 100vw;
+.main {
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100vh;
+	width: 100vw;
 
-    .content {
-      align-items: flex-end;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 15px;
+	.content {
+		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 15px;
 
-      h1, ul {
-        font-family: 'le murmure';
-      }
+	h1, ul {
+		font-family: 'le murmure';
+	}
 
-      .header {
-        font-size: 8rem;
-        margin: 0;
+	.header {
+		font-size: 8rem;
+		margin: 0;
 
-        @media (max-width: 1052px) {
-          .decoration {
-            display: none;
-          }
-        }
-      }
-      .desc-container {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        max-width: 35%;
+		@media (max-width: 1052px) {
+			.decoration {
+				display: none;
+			}
+		}
+	}
+	.desc-container {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		max-width: 35%;
 
-        .description {
-          font-size: 1rem;
-          text-align: left;
-        }
+		.description {
+			font-size: 1rem;
+			text-align: left;
+		}
 
-        .social-links {
-          a {
-            margin: 0 .75rem;
-          }
-          :first-child {
-            margin-left: 0;
-          }
+		.social-links {
+			a {
+				margin: 0 .75rem;
+			}
+			:first-child {
+				margin-left: 0;
+			}
 
-          .logo {
-            height: 2rem;
-          }
-        }
-      }
+			.logo {
+				height: 2rem;
+			}
+		}
+	}
 
-      .section-list {
-        font-size: 3rem;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-    }
+	.section-list {
+		font-size: 3rem;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+	}
 
-  }
+}
 </style>
