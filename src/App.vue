@@ -5,6 +5,7 @@
     <Blog />
     <Projects />
     <Resume />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import About from '@/components/About.vue';
 import Blog from '@/components/Blog.vue';
 import Projects from '@/components/Projects.vue';
 import Resume from '@/components/Resume.vue';
+import Footer from '@/components/Footer.vue';
 
 
 export default {
@@ -24,6 +26,7 @@ export default {
 		Blog,
 		Projects,
 		Resume,
+		Footer,
 	},
 };
 </script>
@@ -48,6 +51,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #FFF;
 }
 </style>

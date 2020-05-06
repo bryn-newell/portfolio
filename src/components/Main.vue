@@ -55,8 +55,10 @@ export default {
 .main {
 	background-size: cover;
 	background-repeat: no-repeat;
+	color: #FFF;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	height: 100vh;
 	width: 100vw;
@@ -65,52 +67,50 @@ export default {
 		align-items: flex-end;
 		display: flex;
 		justify-content: space-between;
-		padding: 0 15px;
+		padding: 0 1rem;
 
-	h1, ul {
-		font-family: 'le murmure';
-	}
+		.header {
+			font-size: 8rem;
+						font-family: 'le murmure';
 
-	.header {
-		font-size: 8rem;
-		margin: 0;
+			margin: 0;
 
-		@media (max-width: 1052px) {
-			.decoration {
-				display: none;
+			@media (max-width: 1052px) {
+				.decoration {
+					display: none;
+				}
 			}
 		}
-	}
-	.desc-container {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column;
-		max-width: 35%;
+		.desc-container {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			max-width: 35%;
 
-		.description {
-			font-size: 1rem;
-			text-align: left;
+			.description {
+				font-size: 1rem;
+				text-align: left;
+			}
+
+			.social-links {
+				a {
+					margin: 0 .75rem;
+				}
+				:first-child {
+					margin-left: 0;
+				}
+				.logo {
+					height: 2rem;
+				}
+			}
 		}
 
-		.social-links {
-			a {
-				margin: 0 .75rem;
-			}
-			:first-child {
-				margin-left: 0;
-			}
-
-			.logo {
-				height: 2rem;
-			}
-		}
-	}
-
-	.section-list {
-		font-size: 3rem;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+		.section-list {
+			font-size: 3rem;
+			font-family: 'le murmure';
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
 		}
 	}
 

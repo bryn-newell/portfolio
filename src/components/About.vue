@@ -1,8 +1,10 @@
 <template>
-<div>
-	<div class="headshot"><img :src="headshot" alt="headshot of Bryn"></div>
-	<h2>about me<span class="decoration" aria-hidden="true">—</span></h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+<div class="about-me">
+		<div :style="{backgroundImage: `url(${headshot})`}" aria-label="headshot of Bryn" class="headshot" />
+		<div class="about-text">
+			<h2 class="heading outline-font">about me<span class="decoration" aria-hidden="true">—</span></h2>
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+	</div>
 </div>
 </template>
 
@@ -18,29 +20,34 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.about-me {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+
 	.headshot {
-		height: 40vh;
-		width: 40vh;
 		border-radius: 100%;
-		overflow: hidden;
-		img {
-			height: 50vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 80%;
+		height: 40vh;
+		margin-right: 4rem;
+		width: 40vh;
+	}
+
+	.about-text {
+		text-align: left;
+		.heading {
+			font-size: 6rem;
+		}
+
+		.description {
+			color: #000;
+			max-width: 500px;
+			// margin: 0 auto;
 		}
 	}
+}
 
-	h2 {
-		color: $rose-gold;
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $rose-gold;
-		font-family: 'le murmure';
-		font-size: 6rem;
-	}
-
-	p {
-		color: #000;
-		max-width: 50%;
-		margin: 0 auto;
-	}
 </style>
