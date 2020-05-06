@@ -31,25 +31,17 @@ export default {
 };
 </script>
 
-<style>
-@font-face {
-  font-family: 'inter';
-  src: url('./assets/Inter.var.woff2') format('woff2');
-}
+<style src="@/styles/main.scss" lang="scss"></style>
+<style lang="scss">
 
-@font-face {
-  font-family: 'le murmure';
-  src: url('./assets/Le_Murmure.woff2') format('woff2');
-}
+  body {
+    margin: 0;
+  }
 
-body {
-  margin: 0;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
 </style>

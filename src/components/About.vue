@@ -45,7 +45,18 @@ export default {
 		.description {
 			color: #000;
 			max-width: 500px;
-			// margin: 0 auto;
+		}
+	}
+	@media (max-width:$breakpoint-md ) {
+		.headshot {
+			margin: 0 auto;
+		}
+		.about-text {
+			text-align: center;
+			width: 100%;
+			.description {
+				max-width: 100%;
+			}
 		}
 	}
 }
