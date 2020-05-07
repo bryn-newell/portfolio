@@ -60,6 +60,7 @@ export default {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-end;
+	padding-bottom: 2rem;
 	height: 100vh;
 	width: 100vw;
 
