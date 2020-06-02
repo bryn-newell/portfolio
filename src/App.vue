@@ -34,6 +34,10 @@ export default {
 <style src="@/styles/main.scss" lang="scss"></style>
 <style lang="scss">
 
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
   body {
     margin: 0;
   }

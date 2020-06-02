@@ -1,6 +1,6 @@
 <template>
 <div class="resume">
-		<h2 class="heading outline-font">resume/cv</h2>
+	<h2 class="heading outline-font">resume/cv</h2>
 </div>
 </template>
 
@@ -10,8 +10,8 @@
 
 <style lang="scss">
 .resume {
-  .heading {
-    font-size: 10rem;
-  }
+	.heading {
+		font-size: 10rem;
+	}
 }
 </style>

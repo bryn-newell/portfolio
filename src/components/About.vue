@@ -14,7 +14,7 @@ import headshot from '@/assets/headshot.jpg';
 export default {
 	data() {
 		return {
-			headshot,
+			headshot
 		};
 	},
 };

@@ -40,12 +40,12 @@ export default {
 	components: {
 		medium,
 		twitter,
-		linkedin,
+		linkedin
 	},
 	data() {
 		return {
 			bg,
-			github,
+			github
 		};
 	},
 };
