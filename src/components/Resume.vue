@@ -1,17 +1,42 @@
 <template>
 <div class="resume">
 	<h2 class="heading outline-font">resume/cv</h2>
+	<a :href="Resume" target="_blank" class="download-button" download>DOWNLOAD THE PDF</a>
 </div>
 </template>
 
 <script>
+import Resume from '../assets/BrynNewellResume.pdf';
+
+export default {
+	data() {
+		return {
+			Resume
+		};
+	}
+};
 
 </script>
 
 <style lang="scss">
 .resume {
+	margin-bottom: 5rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-evenly;
+
 	.heading {
 		font-size: 10rem;
+	}
+
+	.download-button {
+		border: 1px solid black;
+		color: black;
+		font-size: 1.25rem;
+		font-weight: 500;
+		height: fit-content;
+		padding: 5px 10px;
+		text-decoration: none;
 	}
 }
 </style>
