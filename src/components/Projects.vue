@@ -52,32 +52,44 @@ export default {
 		font-size: 10rem;
 	}
 	.project {
-		display: flex;
-		justify-content: space-around;
-		text-align: left;
+		display: grid;
+		grid-template-columns: auto auto;
+		max-width: 1000px;
+		margin: 0 auto 6rem auto;
+
 		.project-number {
-			font-size: 9rem;
+			align-self: center;
+			font-size: 12rem;
+			margin: 0;
 		}
+
 		.content {
 			align-items: center;
 			display: grid;
+			gap: 1rem 0;
 			grid-template-columns: auto auto;
+			grid-auto-rows: min-content;
 			justify-items: start;
+			text-align: left;
+
 			.title {
 				font-size: 6rem;
 				font-family: 'Le Murmure';
 				margin: 0;
 				max-width: 520px;
 			}
+
 			.date {
 				margin: 0;
 				justify-self: end;
 			}
+
 			.description {
 				max-width: 400px;
 				margin: 0;
 				margin-right: 4rem;
 			}
+
 			.tools {
 				list-style: none;
 				justify-self: end;
@@ -85,6 +97,7 @@ export default {
 				margin: 0;
 				text-align: right;
 			}
+
 			.project-link {
 				font-size: 2rem;
 				font-weight: bold;

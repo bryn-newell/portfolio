@@ -17,4 +17,9 @@
   -webkit-text-stroke-color: $rose-gold;
   font-family: 'le murmure';
 
+  &.black {
+    color: black;
+    -webkit-text-stroke-color: black;
+  }
+
 }
