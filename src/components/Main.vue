@@ -92,18 +92,6 @@ export default {
 				font-size: 1rem;
 				text-align: left;
 			}
-
-			.social-links {
-				a {
-					margin: 0 .75rem;
-				}
-				:first-child {
-					margin-left: 0;
-				}
-				.logo {
-					height: 2rem;
-				}
-			}
 		}
 
 		.section-list {

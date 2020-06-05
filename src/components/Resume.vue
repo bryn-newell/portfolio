@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss">
 .resume {
-	margin-bottom: 5rem;
 	display: flex;
 	align-items: baseline;
 	justify-content: space-evenly;
