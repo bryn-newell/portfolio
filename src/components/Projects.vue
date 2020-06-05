@@ -59,7 +59,8 @@ export default {
 <style lang="scss">
 .projects {
 	.heading {
-		font-size: 10rem;
+		text-align: left;
+		margin-left: 10%;
 	}
 	.project {
 		display: grid;

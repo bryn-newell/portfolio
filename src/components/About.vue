@@ -3,7 +3,9 @@
 		<div :style="{backgroundImage: `url(${headshot})`}" aria-label="headshot of Bryn" class="headshot" />
 		<div class="about-text">
 			<h2 class="heading outline-font">about me<span class="decoration" aria-hidden="true">—</span></h2>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+			<p class="description">I'm passionate about creating accessible and beautiful content for the web and contributing
+				impactful code. I strive to curate a driven and collaborative team and community with strong communication,
+				knowledge sharing, and a positive outlook.</p>
 	</div>
 </div>
 </template>

@@ -22,10 +22,10 @@ export default {
 .resume {
 	display: flex;
 	align-items: baseline;
-	justify-content: space-evenly;
 
 	.heading {
-		font-size: 10rem;
+		margin-left: 10%;
+		margin-top: 3rem;
 	}
 
 	.download-button {
@@ -36,6 +36,7 @@ export default {
 		height: fit-content;
 		padding: 5px 10px;
 		text-decoration: none;
+		margin-left: 20%;
 	}
 }
 </style>

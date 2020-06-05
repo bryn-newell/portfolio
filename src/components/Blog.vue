@@ -16,14 +16,13 @@
 <style lang="scss">
 .blog {
 	.heading {
-		font-size: 10rem;
 		margin-top: 5rem;
-		margin-bottom: 3rem;
 	}
 
 	.posts {
+		font-size: 2.25rem;
 		font-weight: 500;
-		max-width: 500px;
+		max-width: 850px;
 		margin: 0 auto;
 		a {
 			color: black;

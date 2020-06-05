@@ -1,6 +1,6 @@
 <template>
 	<div class="footer">
-		<div>
+		<div class="cites">
 			<p>copyright? bryn newell <span class="decoration" aria-hidden="true">—</span> 2020</p>
 			<p>design by <a href="https://henry.codes/">Henry Desroches</a></p>
 		</div>
@@ -48,6 +48,14 @@ export default {
 .footer {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
+	.cites {
+		text-align: left;
+		margin-left: 10%;
+	}
+	.social-links {
+		text-align: right;
+		margin-right: 10%;
+	}
 	.logo {
 		fill: black;
 		path {
