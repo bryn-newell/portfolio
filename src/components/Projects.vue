@@ -28,16 +28,26 @@ export default {
 					tools: ['React', 'Axios', 'JavaScript', 'HTML', 'SCSS']
 				},
 				{
-					title: 'Some API Project',
-					date: 'October 2019',
+					title: 'The Gift of Giving',
+					date: 'March 2019',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					tools: ['Vue', 'Express', 'JavaScript', 'HTML', 'SCSS']
+					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS']
 				},
 				{
-					title: 'A Project With A Long Title',
-					date: 'October 2019',
+					title: 'Food Truck Slack Bot',
+					date: 'April 2019',
+					tools: ['React', 'Slack', 'cronjob']
+				},
+				{
+					title: 'Skillbase/DCM',
+					date: 'May 2019',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					tools: ['Vue', 'Express', 'JavaScript', 'HTML', 'SCSS']
+					tools: ['React', 'AWS', 'Node', 'Express', 'SQL', 'MySQL', 'JavaScript', 'HTML', 'SCSS']
+				},
+				{
+					title: 'Techtonic Website',
+					date: 'June 2019',
+					tools: ['React', 'Docker', 'Gatsby', 'Butter', 'AntD', 'SCSS']
 				}
 			]
 		};
