@@ -1,7 +1,7 @@
 <template>
-<div class="resume">
+<div id="resume">
 	<h2 class="heading outline-font">resume/cv</h2>
-	<a :href="Resume" target="_blank" class="download-button" download>DOWNLOAD THE PDF</a>
+	<a :href="Resume" target="_blank" class="download-button link" download>DOWNLOAD THE PDF</a>
 </div>
 </template>
 
@@ -19,12 +19,13 @@ export default {
 </script>
 
 <style lang="scss">
-.resume {
-	display: flex;
+#resume {
 	align-items: baseline;
+	justify-content: space-between;
+	display: flex;
+	margin: 0 10% 10rem 10%;
 
 	.heading {
-		margin-left: 10%;
 		margin-top: 3rem;
 	}
 
@@ -32,11 +33,9 @@ export default {
 		border: 1px solid black;
 		color: black;
 		font-size: 1.25rem;
-		font-weight: 500;
+		font-weight: 600;
 		height: fit-content;
-		padding: 5px 10px;
-		text-decoration: none;
-		margin-left: 20%;
+		padding: 15px 26px;
 	}
 }
 </style>

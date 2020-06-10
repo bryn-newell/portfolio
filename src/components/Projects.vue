@@ -1,17 +1,15 @@
 <template>
-<div class="projects" >
+<div id="projects">
 	<h2 class="heading outline-font">projects</h2>
 	<div class="project" v-for="(project, index) in projects" :key="index">
 		<h3 class="outline-font black project-number">0{{ index + 1 }}</h3>
-		<div class="content">
-			<h3 class="title">{{ project.title }}<span class="decoration" aria-hidden="true">—</span></h3>
-			<p class="date">{{ project.date }}</p>
-			<p class="description">{{ project.description }}</p>
-			<ul class="tools">
-				<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
-			</ul>
-			<a href="#" class="project-link">see the work<span class="decoration" aria-hidden="true">—</span></a>
-		</div>
+		<h3 class="title">{{ project.title }}<span class="decoration" aria-hidden="true">—</span></h3>
+		<p class="date">{{ project.date }}</p>
+		<p class="description">{{ project.description }}</p>
+		<ul class="tools">
+			<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
+		</ul>
+		<a href="#" class="project-link link">see the work<span class="decoration" aria-hidden="true">—</span></a>
 	</div>
 </div>
 </template>
@@ -57,68 +55,65 @@ export default {
 </script>
 
 <style lang="scss">
-.projects {
+#projects {
+	margin-top: 14rem;
 	.heading {
 		text-align: left;
 		margin-left: 10%;
+		margin-top: 0;
 	}
 	.project {
+		justify-content: start;
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: 2fr 4fr 1fr;
+		grid-template-rows: auto auto auto;
+		gap: 1rem 0;
 		max-width: 1000px;
 		margin: 0 auto 6rem auto;
+		text-align: left;
 
 		.project-number {
 			align-self: center;
 			font-size: 12rem;
-			margin: 0;
+			grid-row: 1 / span 3;
+			margin: 0 6rem 0 3rem;
 		}
 
-		.content {
-			align-items: center;
-			display: grid;
-			gap: 1rem 0;
-			grid-template-columns: auto auto;
-			grid-auto-rows: min-content;
-			justify-items: start;
-			text-align: left;
+		.title {
+			font-size: 6rem;
+			font-family: 'Le Murmure';
+			margin: 0;
+			max-width: 520px;
+		}
 
-			.title {
-				font-size: 6rem;
-				font-family: 'Le Murmure';
-				margin: 0;
-				max-width: 520px;
-			}
+		.date {
+			align-self: center;
+			justify-self: end;
+			margin: 0;
+			padding-bottom: 18px;
+		}
 
-			.date {
-				margin: 0;
-				justify-self: end;
-			}
+		.description {
+			max-width: 400px;
+			margin: 0;
+			margin-right: 4rem;
+		}
 
-			.description {
-				max-width: 400px;
-				margin: 0;
-				margin-right: 4rem;
-			}
+		.tools {
+			list-style: none;
+			grid-column: 3;
+			grid-row: 2 / span 2;
+			justify-self: end;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
 
-			.tools {
-				list-style: none;
-				justify-self: end;
-				padding: 0;
-				margin: 0;
-				text-align: right;
-			}
-
-			.project-link {
-				font-size: 2rem;
-				font-weight: bold;
-				color: $rose-gold;
-				font-family: 'le murmure';
-				text-decoration: none;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
+		.project-link {
+			font-size: 2rem;
+			font-weight: bold;
+			color: $rose-gold;
+			font-family: 'le murmure';
 		}
 	}
 }

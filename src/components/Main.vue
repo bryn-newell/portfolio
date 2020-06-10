@@ -3,26 +3,28 @@
     <div class="content">
       <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
       <div class="desc-container">
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+        <p class="description">I'm passionate about creating accessible and beautiful content for the web and contributing
+				impactful code. I strive to curate a driven and collaborative team and community with strong communication,
+				knowledge sharing, and a positive outlook.</p>
         <div class="social-links">
-          <a href="https://github.com/bryn-newell" target="_blank">
+          <!-- <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
             <img :src="github" alt="Github" class="logo">
-          </a>
-          <a href="https://twitter.com/bryn_newell" target="_blank">
+          </a> -->
+          <a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
             <twitter class="logo" />
           </a>
-          <a href="https://medium.com/@bryn.newell" target="_blank">
+          <a href="https://medium.com/@bryn.newell" target="_blank" ref="noopener noreferrer">
             <medium class="logo" />
           </a>
-          <a href="https://www.linkedin.com/in/bryn-newell/" target="_blank">
+          <a href="https://www.linkedin.com/in/bryn-newell/" target="_blank" ref="noopener noreferrer">
             <linkedin class="logo" />
           </a>
         </div>
       </div>
       <ul class="section-list">
-        <li>Blog</li>
-        <li>Projects</li>
-        <li>Resume/CV</li>
+        <li><a class="link" href="#blog">Blog</a></li>
+        <li><a class="link" href="#projects">Projects</a></li>
+        <li><a class="link" href="#resume">Resume/CV</a></li>
       </ul>
     </div>
   </div>
@@ -100,6 +102,9 @@ export default {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			.link:visited {
+				color: #FFF;
+			}
 		}
 	}
 

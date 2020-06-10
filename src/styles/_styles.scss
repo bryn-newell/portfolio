@@ -39,3 +39,10 @@
     height: 2rem;
   }
 }
+
+.link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
