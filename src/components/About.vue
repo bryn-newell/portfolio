@@ -3,10 +3,11 @@
 		<div :style="{backgroundImage: `url(${headshot})`}" aria-label="headshot of Bryn" class="headshot" />
 		<div class="about-text">
 			<h2 class="heading outline-font">about me<span class="decoration" aria-hidden="true">—</span></h2>
-			<p class="description">hi there! My name is Bryn and I'm a software developer, native Coloradan, and avid rock climber!
-				I'm passionate about creating beautiful and accessibily front-end software through UI and UX design and development and
-				being an active part of the a11y community. I also love D&D, picking up and putting down heavy things, and animal
-				crossing. I'm currently available for part time freelance and email is the best way to get in touch!
+			<p class="description">I love good UX, the a11y community, and prefer my first name spelled in lowercase!
+				I'm also a native Coloradan, avid rock climber and weight lifter, and D&D nerd. <br/><br/>I'm currently employed full time,
+				but I am available for freelance work on the side! I have a background in full stack development, design experience,
+				and my latest offering is performing accessibility audits for your already existing site. I'd love to work together so
+				please feel free to <a href="mailto:bryn.codes@gmail.com" class="link rosegold">get in touch!</a>
 			</p>
 	</div>
 </div>
@@ -28,7 +29,7 @@ export default {
 .about-me {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 5rem 0 10rem 18%;
+	margin: 5rem 0 8rem 18%;
 
 	.headshot {
 		border-radius: 100%;

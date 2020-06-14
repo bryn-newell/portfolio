@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss">
 #projects {
-	margin-top: 14rem;
+	margin-top: 12rem;
 	.heading {
 		text-align: left;
 		margin-left: 10%;
