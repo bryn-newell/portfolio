@@ -1,7 +1,7 @@
 <template>
 	<div class="footer">
 		<div class="bryn">
-			<div>copyright? bryn newell <span class="decoration" aria-hidden="true">—</span></div>
+			<div>bryn newell <span class="decoration" aria-hidden="true">—</span></div>
 			<div class="year">2020</div>
 		</div>
 		<div class="social-links">
@@ -54,6 +54,7 @@ export default {
 		display: flex;
 		font-family: 'le murmure';
 		font-size: 2rem;
+		grid-row: 1 / span 2;
 		text-align: left;
 	}
 	.year {

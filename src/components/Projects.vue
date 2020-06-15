@@ -28,7 +28,7 @@ export default {
 				{
 					title: 'The Gift of Giving',
 					date: 'March 2019',
-					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					description: 'An application built with multiple GCP solutions, including Firebase cloud functions and firestore. The project was built as a solution to gift giving, when not all of your gift list receivers communicate.',
 					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS']
 				},
 				{
@@ -37,7 +37,7 @@ export default {
 					tools: ['React', 'Slack', 'cronjob']
 				},
 				{
-					title: 'Skillbase/DCM',
+					title: 'Skillbase/Developer Competency Matrix',
 					date: 'May 2019',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 					tools: ['React', 'AWS', 'Node', 'Express', 'SQL', 'MySQL', 'JavaScript', 'HTML', 'SCSS']
