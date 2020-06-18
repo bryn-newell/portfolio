@@ -4,7 +4,7 @@
 		<div class="about-text">
 			<h2 class="heading outline-font">about me<span class="decoration" aria-hidden="true">—</span></h2>
 			<p class="description">I love good UX, the a11y community, and rocking climbing!
-				I'm also a native Coloradan, avid weight lifter, and D&D nerd. <br/><br/>I'm currently employed full time as a Full Stack Developer at a financial tech, but I am available for freelance work on the side! I have a background in full stack development, design experience, and my latest offering is performing accessibility audits for your already existing site. I'd love to work together so please feel free to
+				I'm also a native Coloradan, avid weight lifter, and D&D nerd. <br/><br/>I'm currently employed full time as a Full Stack Developer at a financial tech company, but I am available for freelance work on the side! I have a background in full stack, UI and UX design experience, and my latest offering is performing accessibility audits for your already existing site. I'd love to work together so please feel free to
 				<a href="mailto:bryn.codes@gmail.com" class="link rosegold">get in touch!</a>
 			</p>
 	</div>

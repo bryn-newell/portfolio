@@ -5,11 +5,11 @@
 		<h3 class="outline-font black project-number">0{{ index + 1 }}</h3>
 		<h3 class="title">{{ project.title }}<span class="decoration" aria-hidden="true">—</span></h3>
 		<p class="date">{{ project.date }}</p>
-		<p class="description">{{ project.description }}</p>
+		<p class="description" v-html="project.description"></p>
 		<ul class="tools">
 			<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
 		</ul>
-		<a href="#" class="project-link link">see the work<span class="decoration" aria-hidden="true">—</span></a>
+		<a v-if="project.link" :href="project.link" class="project-link link" target="_blank" ref="noopener noreferrer">see the work<span class="decoration" aria-hidden="true">—</span></a>
 	</div>
 </div>
 </template>
@@ -22,30 +22,36 @@ export default {
 				{
 					title: 'Initiative',
 					date: 'October 2019',
-					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					tools: ['React', 'Axios', 'JavaScript', 'HTML', 'SCSS']
+					description: 'A modern tabletop RPG companion application, built with love and some pals, aka the <a href="https://crit.fail/" target="_blank" ref="noopener noreferrer" class="link rosegold">Crit Fail Team</a>',
+					tools: ['React', 'Axios', 'Firebase', 'JavaScript', 'HTML', 'SCSS'],
+					link: 'https://github.com/xdesro/initiative-react'
 				},
 				{
 					title: 'The Gift of Giving',
 					date: 'March 2019',
-					description: 'An application built with multiple GCP solutions, including Firebase cloud functions and firestore. The project was built as a solution to gift giving, when not all of your gift list receivers communicate.',
-					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS']
+					description: 'The culmination captstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don\'t know each other, and don\'t wan\'t to duplicate gifts.',
+					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS'],
+					link: 'https://the-gift-of-giving.firebaseapp.com/'
 				},
 				{
 					title: 'Food Truck Slack Bot',
 					date: 'April 2019',
-					tools: ['React', 'Slack', 'cronjob']
+					description: 'A custom office wide Slack bot with custom AI to inform the company each day before lunch time which food trucks were going to be in the area.',
+					tools: ['JavaScript', 'Node', 'Express', 'Slack', 'Next JS', 'cron-job', 'Twitter API', 'Google Calendar API'],
+					link: 'https://github.com/bryn-newell/food-truck-bot'
 				},
 				{
-					title: 'Skillbase/Developer Competency Matrix',
+					title: 'Skill Base',
 					date: 'May 2019',
-					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-					tools: ['React', 'AWS', 'Node', 'Express', 'SQL', 'MySQL', 'JavaScript', 'HTML', 'SCSS']
+					description: 'An internal tool to help the company as a whole, and particularly the sales department, keep track of the different kinds of technological, professional, and soft skills of each employee. I designed and created mock ups for this project, as well as developed front and back end sections of application all the way up to Beta Release.',
+					tools: ['React', 'AWS', 'SQL', 'Invision Studio', 'D3', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS']
 				},
 				{
 					title: 'Techtonic Website',
 					date: 'June 2019',
-					tools: ['React', 'Docker', 'Gatsby', 'Butter', 'AntD', 'SCSS']
+					description: 'The Techtonic website was getting an overhaul and I was tasked to re-create as many of the existing pages as possible, using an entirely new UI library and adjust all the styles for a design uplift, while the main team updated our CMS. As I worked on this project I also began to build an internal component library, with company based style guide adjustments applied to be used company-wide.',
+					tools: ['React', 'Docker', 'Gatsby', 'Butter', 'AntD', 'SCSS'],
+					link: 'https://www.techtonic.com/'
 				}
 			]
 		};
