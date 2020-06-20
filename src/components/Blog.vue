@@ -6,10 +6,7 @@
 			<span class="list-number">01. </span>From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know/
 		</a>
 		<a class="link" href="#" target="_blank" ref="noopener noreferrer">
-			<span class="list-number">02. </span>Another Blog Post with a Different Title/
-		</a>
-		<a class="link" href="#" target="_blank" ref="noopener noreferrer">
-			<span class="list-number">03. </span>A smol title/
+			<span class="list-number">02. </span>A Request To Stop Saying Accessibility Is Hard/
 		</a>
 	</div>
 </div>

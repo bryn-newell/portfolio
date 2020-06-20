@@ -3,12 +3,11 @@
     <div class="content">
       <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
       <div class="desc-container">
-        <p class="description">hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accesible and beautiful
-				front-end code, currating communities, and leading by building my collaborators and teammates up together.</p>
+        <p class="description">hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accesible and beautiful front-end code, currating communities, and leading by building my collaborators and teammates up together.</p>
         <div class="social-links">
-          <!-- <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
+          <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
             <img :src="github" alt="Github" class="logo">
-          </a> -->
+          </a>
           <a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
             <twitter class="logo" />
           </a>
@@ -54,8 +53,9 @@ export default {
 
 <style lang="scss">
 .main {
-	background-size: cover;
+	background-position: center bottom;
 	background-repeat: no-repeat;
+	background-size: cover;
 	color: #FFF;
 	display: flex;
 	flex-direction: column;
@@ -69,7 +69,7 @@ export default {
 		align-items: flex-end;
 		display: flex;
 		justify-content: space-between;
-		padding: 0 1rem;
+		padding: 0 5%;
 
 		.header {
 			font-size: 8rem;

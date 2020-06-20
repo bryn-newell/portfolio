@@ -1,13 +1,13 @@
 <template>
-	<div class="footer">
+	<div class="footer" :class="{sticky}">
 		<div class="bryn">
 			<div>bryn newell <span class="decoration" aria-hidden="true">—</span></div>
 			<div class="year">2020</div>
 		</div>
 		<div class="social-links">
-			<!-- <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
+			<a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
 				<img :src="github" alt="Github" class="logo">
-			</a> -->
+			</a>
 			<a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
 				<twitter class="logo" />
 			</a>
@@ -34,6 +34,11 @@ export default {
 		medium,
 		twitter,
 		linkedin
+	},
+	computed: {
+		sticky() {
+			return true;
+		}
 	},
 	data() {
 		return {
