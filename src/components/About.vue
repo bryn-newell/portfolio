@@ -50,6 +50,7 @@ export default {
 		}
 	}
 	@media (max-width:$breakpoint-md ) {
+		margin-left: 0;
 		.headshot {
 			margin: 0 auto;
 		}
@@ -57,7 +58,8 @@ export default {
 			text-align: center;
 			width: 100%;
 			.description {
-				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}

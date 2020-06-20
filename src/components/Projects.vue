@@ -122,5 +122,30 @@ export default {
 			font-family: 'le murmure';
 		}
 	}
+	@media (max-width: $breakpoint-md) {
+		.heading {
+			margin-left: 0;
+			text-align: center;
+		}
+		.project {
+			grid-template-columns: repeat(3, auto);
+			.project-number {
+				align-self: flex-start;
+				grid-row: 1 / span 1;
+				margin: 0 2rem 0 1rem;
+			}
+			.title {
+				max-width: 300px;
+			}
+			.description {
+				grid-column: 2;
+				margin-right: 2rem;
+				max-width: 300px;
+			}
+			.project-link {
+				grid-column: 2;
+			}
+		}
+	}
 }
 </style>

@@ -37,5 +37,10 @@ export default {
 		height: fit-content;
 		padding: 15px 26px;
 	}
+
+	@media (max-width: $breakpoint-md) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 </style>

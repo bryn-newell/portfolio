@@ -35,5 +35,10 @@
 			color: $rose-gold;
 		}
 	}
+	@media (max-width: $breakpoint-md) {
+		.posts {
+			font-size: 2rem;
+		}
+	}
 }
 </style>
