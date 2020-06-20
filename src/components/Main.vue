@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss">
 .main {
+	background-color: $light-pink;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -77,7 +78,7 @@ export default {
 
 			margin: 0;
 
-			@media (max-width: 1052px) {
+			@media (max-width: 1098px) {
 				.decoration {
 					display: none;
 				}
@@ -106,6 +107,31 @@ export default {
 			}
 		}
 	}
-
+	@media (max-width: $breakpoint-md) {
+		.content {
+			flex-wrap: wrap;
+			.desc-container {
+				max-width: 100%;
+				.description {
+					margin-top: 1rem;
+				}
+			}
+			.section-list {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 1rem;
+				width: 100%;
+				li:not(:last-child) {
+					margin-right: 5%;
+				}
+			}
+		}
+	}
+	@media (max-width: $breakpoint-sm) {
+		// flex-direction: unset;
+		.content {
+			// background-color: $light-pink;
+		}
+	}
 }
 </style>
