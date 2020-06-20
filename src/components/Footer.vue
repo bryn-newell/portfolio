@@ -85,5 +85,14 @@ export default {
 			color: $rose-gold;
 		}
 	}
+
+	@media (max-width: $breakpoint-sm) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.bryn {
+			margin-bottom: 1rem;
+		}
+	}
 }
 </style>

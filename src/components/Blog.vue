@@ -40,5 +40,15 @@
 			font-size: 2rem;
 		}
 	}
+
+	@media (max-width: $breakpoint-sm) {
+		.heading {
+			font-size: 8rem;
+			margin-top: 2rem;
+		}
+		.posts {
+			font-size: 1.5rem;
+		}
+	}
 }
 </style>

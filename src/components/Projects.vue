@@ -76,6 +76,7 @@ export default {
 		gap: 1rem 0;
 		max-width: 1000px;
 		margin: 0 auto 6rem auto;
+		padding: 0 1rem;
 		text-align: left;
 
 		.project-number {
@@ -131,11 +132,12 @@ export default {
 			grid-template-columns: repeat(3, auto);
 			.project-number {
 				align-self: flex-start;
-				grid-row: 1 / span 1;
-				margin: 0 2rem 0 1rem;
+				font-size: 10rem;
+				grid-row: 1 / span 2;
+				margin: 0 1rem 0 1rem;
 			}
 			.title {
-				max-width: 300px;
+				font-size: 5rem;
 			}
 			.description {
 				grid-column: 2;
@@ -143,7 +145,44 @@ export default {
 				max-width: 300px;
 			}
 			.project-link {
+				font-size: 1.5rem;
 				grid-column: 2;
+			}
+		}
+	}
+	@media (max-width: $breakpoint-sm) {
+		margin-top: 5rem;
+		.heading {
+			font-size: 8rem;
+		}
+		.project {
+			grid-template-columns: repeat(3, auto);
+			.project-number {
+				font-size: 6rem;
+				grid-column: 1;
+				grid-row: 1;
+				line-height: 6rem;
+			}
+			.title {
+				font-size: 4rem;
+				grid-column: 2 / span 2;
+			}
+			.date {
+				justify-self: start;
+				grid-column: 1;
+				grid-row: 2;
+				padding-bottom: 0;
+			}
+			.description {
+				grid-column: 1 / span 2;
+				margin-right: 10px;
+			}
+			.tools {
+				grid-column: 3;
+				grid-row: 2 / span 3;
+			}
+			.project-link {
+				grid-column: 1;
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 <template>
 <div id="resume">
-	<h2 class="heading outline-font">resume/cv</h2>
+	<h2 class="heading outline-font">resume<br class="sm-only"/>/cv</h2>
 	<a :href="Resume" target="_blank" class="download-button link" download>DOWNLOAD THE PDF</a>
 </div>
 </template>
@@ -27,6 +27,9 @@ export default {
 
 	.heading {
 		margin-top: 3rem;
+		.sm-only {
+			display: none;
+		}
 	}
 
 	.download-button {
@@ -41,6 +44,15 @@ export default {
 	@media (max-width: $breakpoint-md) {
 		flex-direction: column;
 		align-items: center;
+	}
+	@media (max-width: $breakpoint-sm) {
+		.heading {
+			font-size: 8rem;
+			word-wrap: break-word;
+			.sm-only {
+				display: inline
+			}
+		}
 	}
 }
 </style>

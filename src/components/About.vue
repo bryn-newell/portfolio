@@ -63,6 +63,20 @@ export default {
 			}
 		}
 	}
+	@media (max-width: $breakpoint-sm) {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		.headshot {
+			height: 25vh;
+			width: 25vh;
+		}
+		.heading {
+			margin: 1.5rem auto;
+			.decoration {
+				display: none;
+			}
+		}
+	}
 }
 
 </style>
