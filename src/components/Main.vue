@@ -127,11 +127,5 @@ export default {
 			}
 		}
 	}
-	@media (max-width: $breakpoint-sm) {
-		// flex-direction: unset;
-		.content {
-			// background-color: $light-pink;
-		}
-	}
 }
 </style>
