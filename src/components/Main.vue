@@ -102,6 +102,7 @@ export default {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			.link,
 			.link:visited {
 				color: #FFF;
 			}
