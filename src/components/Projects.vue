@@ -3,7 +3,7 @@
 	<h2 class="heading outline-font">projects</h2>
 	<div class="project" v-for="(project, index) in projects" :key="index">
 		<h3 class="outline-font black project-number">0{{ index + 1 }}</h3>
-		<h3 class="title">{{ project.title }}<span class="decoration" aria-hidden="true">—</span></h3>
+		<h3 class="title">{{ project.title }}</h3>
 		<p class="date">{{ project.date }}</p>
 		<p class="description" v-html="project.description"></p>
 		<ul class="tools">
@@ -129,7 +129,6 @@ export default {
 			text-align: center;
 		}
 		.project {
-			grid-template-columns: repeat(3, auto);
 			.project-number {
 				align-self: flex-start;
 				font-size: 10rem;
@@ -156,7 +155,7 @@ export default {
 			font-size: 8rem;
 		}
 		.project {
-			grid-template-columns: repeat(3, auto);
+			grid-template-columns: 1fr 2fr 1fr;
 			.project-number {
 				font-size: 6rem;
 				grid-column: 1;
@@ -176,6 +175,7 @@ export default {
 			.description {
 				grid-column: 1 / span 2;
 				margin-right: 10px;
+				max-width: 100%;
 			}
 			.tools {
 				grid-column: 3;

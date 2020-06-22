@@ -3,7 +3,7 @@
     <div class="content">
       <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
       <div class="desc-container">
-        <p class="description">hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accesible and beautiful front-end code, currating communities, and leading by building my collaborators and teammates up together.</p>
+        <p class="description">Hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accesible and beautiful front-end code, currating communities, and leading by building my collaborators and teammates up together.</p>
         <div class="social-links">
           <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
             <img :src="github" alt="Github" class="logo">
