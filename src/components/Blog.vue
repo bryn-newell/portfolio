@@ -6,7 +6,7 @@
 			<span class="list-number">01. </span>From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know/
 		</a>
 		<a class="link" href="https://medium.com/@bryn.newell/a-request-to-stop-saying-accessibility-is-hard-7ff0314c3280" target="_blank" ref="noopener noreferrer">
-			<span class="list-number">02. </span>A Request To Stop Saying Accessibility Is Hard/
+			<span class="list-number">02. </span>A Request to Stop Saying Accessibility Is Hard/
 		</a>
 	</div>
 </div>
