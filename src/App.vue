@@ -42,6 +42,11 @@ export default {
     margin: 0;
   }
 
+
+  h1, h2, h3, h4 {
+    font-weight: normal;
+  }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

@@ -63,7 +63,7 @@ export default {
 		text-align: left;
 	}
 	.year {
-		font-family: 'inter';
+		font-family: Avenir;
 		font-size: 1rem;
 		margin-left: 4px;
 		padding-bottom: 6px;

@@ -38,7 +38,13 @@ export default {
 		font-size: 1.25rem;
 		font-weight: 600;
 		height: fit-content;
+		letter-spacing: 1.5px;
 		padding: 15px 26px;
+		&:hover {
+			text-decoration: none;
+			color: white;
+			background-color: black;
+		}
 	}
 
 	@media (max-width: $breakpoint-md) {

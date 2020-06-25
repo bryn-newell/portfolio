@@ -19,7 +19,7 @@
           </a>
         </div>
       </div>
-      <ul class="section-list">
+      <ul class="site-sections">
         <li><a class="link" href="#blog">Blog</a></li>
         <li><a class="link" href="#projects">Projects</a></li>
         <li><a class="link" href="#resume">Resume/CV</a></li>
@@ -96,12 +96,13 @@ export default {
 			}
 		}
 
-		.section-list {
+		.site-sections {
 			font-size: 3rem;
 			font-family: 'le murmure';
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			text-align: right;
 			.link,
 			.link:visited {
 				color: #FFF;
@@ -117,7 +118,7 @@ export default {
 					margin-top: 1rem;
 				}
 			}
-			.section-list {
+			.site-sections {
 				display: flex;
 				flex-wrap: wrap;
 				margin-top: 1rem;
