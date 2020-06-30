@@ -1,17 +1,17 @@
 <template>
-<div id="projects">
-	<h2 class="heading outline-font">projects</h2>
-	<div class="project" v-for="(project, index) in projects" :key="index">
-		<h3 class="outline-font black project-number">0{{ index + 1 }}</h3>
-		<h3 class="title">{{ project.title }}</h3>
-		<p class="date">{{ project.date }}</p>
-		<p class="description" v-html="project.description"></p>
-		<ul class="tools">
-			<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
-		</ul>
-		<a v-if="project.link" :href="project.link" class="project-link link" target="_blank" ref="noopener noreferrer">see the work<span class="decoration" aria-hidden="true">—</span></a>
-	</div>
-</div>
+	<section id="projects">
+		<h2 class="heading outline-font">projects</h2>
+		<div class="project" v-for="(project, index) in projects" :key="index">
+			<span class="outline-font black project-number">0{{ index + 1 }}</span>
+			<h3 class="title">{{ project.title }}</h3>
+			<p class="date">{{ project.date }}</p>
+			<p class="description" v-html="project.description"></p>
+			<ul class="tools">
+				<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
+			</ul>
+			<a v-if="project.link" :href="project.link" class="project-link link" target="_blank" ref="noopener noreferrer">see the work<span class="decoration" aria-hidden="true">—</span></a>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -121,6 +121,9 @@ export default {
 			font-weight: bold;
 			color: $rose-gold;
 			font-family: 'le murmure';
+			.decoration {
+				position: absolute;
+			}
 		}
 	}
 	@media (max-width: $breakpoint-md) {
@@ -161,6 +164,7 @@ export default {
 				grid-column: 1;
 				grid-row: 1;
 				line-height: 6rem;
+				margin: 0;
 			}
 			.title {
 				font-size: 4rem;
@@ -168,7 +172,7 @@ export default {
 			}
 			.date {
 				justify-self: start;
-				grid-column: 1;
+				grid-column: 1 / span 2;
 				grid-row: 2;
 				padding-bottom: 0;
 			}
@@ -179,10 +183,10 @@ export default {
 			}
 			.tools {
 				grid-column: 3;
-				grid-row: 2 / span 3;
+				grid-row: 3 / span 2;
 			}
 			.project-link {
-				grid-column: 1;
+				grid-column: 1 / span 2;
 			}
 		}
 	}

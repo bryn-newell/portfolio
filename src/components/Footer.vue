@@ -1,52 +1,28 @@
 <template>
-	<div class="footer" :class="{sticky}">
+	<footer class="footer" :class="{sticky}">
 		<div class="bryn">
 			<div>bryn newell <span class="decoration" aria-hidden="true">—</span></div>
 			<div class="year">2020</div>
 		</div>
-		<div class="social-links">
-			<a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
-				<img :src="github" alt="Github" class="logo">
-			</a>
-			<a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
-				<twitter class="logo" />
-			</a>
-			<a href="https://medium.com/@bryn.newell" target="_blank" ref="noopener noreferrer">
-				<medium class="logo" />
-			</a>
-			<a href="https://www.linkedin.com/in/bryn-newell/" target="_blank" ref="noopener noreferrer">
-				<linkedin class="logo" />
-			</a>
-		</div>
+		<SocialLinks />
 		<p class="henry">design by <a class="link" href="https://henry.codes/" target="_blank" ref="noopener noreferrer">Henry Desroches</a></p>
-	</div>
+	</footer>
 </template>
 
 <script>
-import github from '@/assets/github-black.png';
-import medium from '@/assets/medium.vue';
-import twitter from '@/assets/twitter.vue';
-import linkedin from '@/assets/linkedin.vue';
+import SocialLinks from '@/components/SocialLinks.vue';
 
 export default {
 	name: 'Main',
 	components: {
-		medium,
-		twitter,
-		linkedin
+		SocialLinks
 	},
 	computed: {
 		sticky() {
 			return true;
 		}
-	},
-	data() {
-		return {
-			github
-		};
 	}
 };
-
 </script>
 
 <style lang="scss">
@@ -66,16 +42,13 @@ export default {
 		font-family: Avenir;
 		font-size: 1rem;
 		margin-left: 4px;
-		padding-bottom: 6px;
+		padding-bottom: 4px;
 	}
 	.social-links {
 		text-align: right;
 	}
-	.logo {
+	.logo path {
 		fill: black;
-		path {
-			fill: black;
-		}
 	}
 	.henry {
 		grid-column: 2;
