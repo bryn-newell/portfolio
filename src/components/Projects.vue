@@ -1,17 +1,17 @@
 <template>
-<div id="projects">
-	<h2 class="heading outline-font">projects</h2>
-	<div class="project" v-for="(project, index) in projects" :key="index">
-		<h3 class="outline-font black project-number">0{{ index + 1 }}</h3>
-		<h3 class="title">{{ project.title }}</h3>
-		<p class="date">{{ project.date }}</p>
-		<p class="description" v-html="project.description"></p>
-		<ul class="tools">
-			<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
-		</ul>
-		<a v-if="project.link" :href="project.link" class="project-link link" target="_blank" ref="noopener noreferrer">see the work<span class="decoration" aria-hidden="true">—</span></a>
-	</div>
-</div>
+	<section id="projects">
+		<h2 class="heading outline-font">projects</h2>
+		<div class="project" v-for="(project, index) in projects" :key="index">
+			<span class="outline-font black project-number">0{{ index + 1 }}</span>
+			<h3 class="title">{{ project.title }}</h3>
+			<p class="date">{{ project.date }}</p>
+			<p class="description" v-html="project.description"></p>
+			<ul class="tools">
+				<li v-for="(tool, index) in project.tools" :key="index">{{ tool }}</li>
+			</ul>
+			<a v-if="project.link" :href="project.link" class="project-link link" target="_blank" ref="noopener noreferrer">see the work<span class="decoration" aria-hidden="true">—</span></a>
+		</div>
+	</section>
 </template>
 
 <script>
