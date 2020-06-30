@@ -71,11 +71,8 @@ export default {
 	.social-links {
 		text-align: right;
 	}
-	.logo {
+	.logo	path {
 		fill: black;
-		path {
-			fill: black;
-		}
 	}
 	.henry {
 		grid-column: 2;

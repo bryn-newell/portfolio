@@ -6,7 +6,7 @@
         <p class="description">Hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accesible and beautiful front-end code, currating communities, and leading by building my collaborators and teammates up together.</p>
         <div class="social-links">
           <a href="https://github.com/bryn-newell" target="_blank" ref="noopener noreferrer">
-            <img :src="github" alt="Github" class="logo">
+            <github class="logo" />
           </a>
           <a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
             <twitter class="logo" />
@@ -30,7 +30,7 @@
 
 <script>
 import bg from '@/assets/mainBG.jpg';
-import github from '@/assets/github.png';
+import github from '@/assets/github.vue';
 import medium from '@/assets/medium.vue';
 import twitter from '@/assets/twitter.vue';
 import linkedin from '@/assets/linkedin.vue';
@@ -38,6 +38,7 @@ import linkedin from '@/assets/linkedin.vue';
 export default {
 	name: 'Main',
 	components: {
+		github,
 		medium,
 		twitter,
 		linkedin
