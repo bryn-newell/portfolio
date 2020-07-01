@@ -29,7 +29,7 @@ export default {
 				{
 					title: 'The Gift of Giving',
 					date: 'March 2019',
-					description: 'The culmination captstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don\'t know each other, and don\'t want to duplicate gifts.',
+					description: 'The culmination capstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don\'t know each other, and don\'t want to duplicate gifts.',
 					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS'],
 					link: 'https://the-gift-of-giving.firebaseapp.com/'
 				},
