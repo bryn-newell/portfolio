@@ -29,7 +29,7 @@ export default {
 				{
 					title: 'The Gift of Giving',
 					date: 'March 2019',
-					description: 'The culmination captstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don\'t know each other, and don\'t wan\'t to duplicate gifts.',
+					description: 'The culmination captstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don\'t know each other, and don\'t want to duplicate gifts.',
 					tools: ['React', 'GCP', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS'],
 					link: 'https://the-gift-of-giving.firebaseapp.com/'
 				},
@@ -43,13 +43,13 @@ export default {
 				{
 					title: 'Skill Base',
 					date: 'May 2019',
-					description: 'An internal tool to help the company as a whole, and particularly the sales department, keep track of the different kinds of technological, professional, and soft skills of each employee. I designed and created mock ups for this project, as well as developed front and back end sections of application all the way up to Beta Release.',
+					description: 'An internal tool to help the company as a whole, and particularly the sales department, keep track of the different kinds of technological, professional, and soft skills of each employee. I designed and created mock ups for this project, as well as developed front and back end sections of the application from project inception to beta release.',
 					tools: ['React', 'AWS', 'SQL', 'Invision Studio', 'D3', 'Node', 'Express', 'JavaScript', 'HTML', 'SCSS']
 				},
 				{
 					title: 'Techtonic Website',
 					date: 'June 2019',
-					description: 'The Techtonic website was getting an overhaul and I was tasked to re-create as many of the existing pages as possible, using an entirely new UI library and adjust all the styles for a design uplift, while the main team updated our CMS. As I worked on this project I also began to build an internal component library, with company based style guide adjustments applied to be used company-wide.',
+					description: 'The Techtonic website was getting an overhaul and I was tasked to re-create as many of the existing pages as possible, using an entirely new UI library and adjusting all the styles for a design uplift, while the main team updated our CMS. As I worked on this project I also began to build an internal component library, with specific style guidelines applied to be used company-wide on all future projects.',
 					tools: ['React', 'Docker', 'Gatsby', 'Butter', 'AntD', 'SCSS'],
 					link: 'https://www.techtonic.com/'
 				}
