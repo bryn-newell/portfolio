@@ -46,6 +46,9 @@ export default {
 	}
 	.social-links {
 		text-align: right;
+		@media (max-width: $breakpoint-sm) {
+			text-align: center;
+		}
 	}
 	.logo path {
 		fill: black;

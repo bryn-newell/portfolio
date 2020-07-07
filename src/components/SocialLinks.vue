@@ -34,3 +34,22 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss">
+.social-links {
+  a {
+    margin: 0 .75rem;
+  }
+  :first-child {
+    margin-left: 0;
+  }
+  .logo {
+    height: 2rem;
+    fill: white;
+  }
+	@media (max-width: $breakpoint-sm) {
+		text-align: left;
+		width: 100%;
+	}
+}
+</style>
