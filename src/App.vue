@@ -31,17 +31,14 @@ export default {
 };
 </script>
 
-<style src="@/styles/main.scss" lang="scss"></style>
-<style lang="scss">
-
-*, *:before, *:after {
-  box-sizing: border-box
-}
+<style src="@/styles/main.scss" lang="scss">
+  *, *:before, *:after {
+    box-sizing: border-box
+  }
 
   body {
     margin: 0;
   }
-
 
   h1, h2, h3, h4 {
     font-weight: normal;
