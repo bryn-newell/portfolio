@@ -31,7 +31,8 @@ export default {
 };
 </script>
 
-<style src="@/styles/main.scss" lang="scss">
+<style src="@/styles/main.scss" lang="scss" />
+<style>
   *, *:before, *:after {
     box-sizing: border-box
   }
