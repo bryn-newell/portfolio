@@ -9,12 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "node-sass": "^9.0.0",
+    "sass": "^1.69.7",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "^4.3.1",
     "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-airbnb": "^5.0.2",
@@ -23,6 +23,8 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "eslint-plugin-vue-a11y": "0.0.31",
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -45,7 +47,10 @@
     "rules": {
       "max-len": "off",
       "no-tabs": "off",
-      "indent": ["warn", "tab"],
+      "indent": [
+        "warn",
+        "tab"
+      ],
       "comma-dangle": "off",
       "semi": "warn"
     }

@@ -17,7 +17,6 @@ import Projects from '@/components/Projects.vue';
 import Resume from '@/components/Resume.vue';
 import Footer from '@/components/Footer.vue';
 
-
 export default {
 	name: 'App',
 	components: {
