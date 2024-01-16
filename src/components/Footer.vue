@@ -2,7 +2,7 @@
 	<footer class="footer" :class="{sticky}">
 		<div class="bryn">
 			<div>bryn newell <span class="decoration" aria-hidden="true">—</span></div>
-			<div class="year">2020</div>
+			<div class="year">2024</div>
 		</div>
 		<SocialLinks />
 		<p class="henry">design by <a class="link" href="https://henry.codes/" target="_blank" ref="noopener noreferrer">Henry Desroches</a></p>
