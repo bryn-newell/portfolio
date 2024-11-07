@@ -3,13 +3,13 @@
     <div class="content">
       <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
       <div class="desc-container">
-        <p class="description">Hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and leading by building my collaborators and teammates up together.</p>
+        <p class="description">Hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
 				<SocialLinks />
       </div>
       <nav class="site-sections">
-        <a class="link" href="#blog">Blog</a>
-        <a class="link" href="#projects">Projects</a>
-        <a class="link" href="#resume">Resume/CV</a>
+        <a class="link" href="#blog">blog</a>
+        <a class="link" href="#projects">projects</a>
+        <a class="link" href="#resume">resume/cv</a>
       </nav>
     </div>
   </section>

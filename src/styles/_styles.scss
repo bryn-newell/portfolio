@@ -4,6 +4,14 @@
   src: url('~@/assets/Le_Murmure.woff2') format('woff2');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
