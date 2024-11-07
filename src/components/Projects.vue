@@ -118,7 +118,6 @@ export default {
 
 		.project-link {
 			font-size: 2rem;
-			font-weight: bold;
 			color: $rose-gold;
 			font-family: 'le murmure';
 			.decoration {
