@@ -4,8 +4,8 @@
   src: url('~@/assets/Le_Murmure.woff2') format('woff2');
 }
 
-html {
-  scroll-behavior: smooth;
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
 section {
