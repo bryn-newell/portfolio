@@ -4,9 +4,9 @@
 			<span class="sr-only">Visit my Github</span>
 			<github class="logo" />
 		</a>
-		<a href="https://twitter.com/bryn_newell" target="_blank" ref="noopener noreferrer">
-			<span class="sr-only">Visit my Twitter</span>
-			<twitter class="logo" />
+		<a href="https://bsky.app/profile/bryn-codes.bsky.social" target="_blank" ref="noopener noreferrer">
+			<span class="sr-only">Visit my Bluesky</span>
+			<bsky class="logo" />
 		</a>
 		<a href="https://medium.com/@bryn.newell" target="_blank" ref="noopener noreferrer">
 			<span class="sr-only"> Visit my Medium</span>
@@ -22,14 +22,14 @@
 <script>
 import github from '@/assets/github.vue';
 import medium from '@/assets/medium.vue';
-import twitter from '@/assets/twitter.vue';
+import bsky from '@/assets/bsky.vue';
 import linkedin from '@/assets/linkedin.vue';
 
 export default {
 	components: {
 		github,
 		medium,
-		twitter,
+		bsky,
 		linkedin
 	},
 };
