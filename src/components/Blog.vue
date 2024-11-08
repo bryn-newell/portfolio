@@ -2,10 +2,20 @@
 	<section id="blog">
 		<h2 class="heading outline-font">blog</h2>
 		<div class="posts">
-			<a class="link" href="https://medium.com/@bryn.newell/https-medium-com-bryn-newell-from-one-non-expert-to-another-fb31add2f3c6" target="_blank" ref="noopener noreferrer">
+			<a
+				class="link"
+				href="https://medium.com/@bryn.newell/https-medium-com-bryn-newell-from-one-non-expert-to-another-fb31add2f3c6"
+				target="_blank"
+				ref="noopener noreferrer"
+			>
 				<span class="list-number">01. </span>From One Non-Expert to Another - Learning What I Didn't Know I Didn't Know
 			</a>
-			<a class="link" href="https://medium.com/@bryn.newell/a-request-to-stop-saying-accessibility-is-hard-7ff0314c3280" target="_blank" ref="noopener noreferrer">
+			<a
+				class="link"
+				href="https://medium.com/@bryn.newell/a-request-to-stop-saying-accessibility-is-hard-7ff0314c3280"
+				target="_blank"
+				ref="noopener noreferrer"
+			>
 				<span class="list-number">02. </span>A Request to Stop Saying Accessibility Is Hard
 			</a>
 		</div>
@@ -28,9 +38,9 @@
 			color: black;
 			&:not(:last-child) {
 				&:after {
-					content: '/';
+					content: "/";
 					display: inline-block;
-					margin-right: .5rem;
+					margin-right: 0.5rem;
 				}
 			}
 		}

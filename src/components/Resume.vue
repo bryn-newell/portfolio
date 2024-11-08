@@ -1,21 +1,25 @@
 <template>
 	<section id="resume">
-		<h2 class="heading outline-font">resume<br class="sm-only"/>/cv</h2>
-		<a :href="Resume" target="_blank" class="download-button link" download>DOWNLOAD THE PDF</a>
+		<h2 class="heading outline-font">resume<br class="sm-only" />/cv</h2>
+		<a
+			:href="Resume"
+			target="_blank"
+			class="download-button link"
+			download
+		>DOWNLOAD THE PDF</a>
 	</section>
 </template>
 
 <script>
-import Resume from '../assets/BrynNewellResume.pdf';
+import Resume from "../assets/BrynNewellResume.pdf";
 
 export default {
 	data() {
 		return {
-			Resume
+			Resume,
 		};
-	}
+	},
 };
-
 </script>
 
 <style lang="scss">
@@ -56,7 +60,7 @@ export default {
 			font-size: 8rem;
 			word-wrap: break-word;
 			.sm-only {
-				display: inline
+				display: inline;
 			}
 		}
 	}

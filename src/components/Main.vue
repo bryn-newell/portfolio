@@ -1,32 +1,47 @@
 <template>
-  <section class="main" :style="{backgroundImage: `url(${bg})`}">
-    <div class="content">
-      <h1 class="header">bryn newell<span class="decoration" aria-hidden="true">—</span></h1>
-      <div class="desc-container">
-        <p class="description">Hi there!<br/>I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
+	<section
+		class="main"
+		:style="{backgroundImage: `url(${bg})`}"
+	>
+		<div class="content">
+			<h1 class="header">bryn newell<span
+					class="decoration"
+					aria-hidden="true"
+				>—</span></h1>
+			<div class="desc-container">
+				<p class="description">Hi there!<br />I'm bryn (she/her), a creative developer passionate about creating accessible and beautiful front-end code, curating communities, and moving the needle forward in any environment I can.</p>
 				<SocialLinks />
-      </div>
-      <nav class="site-sections">
-        <a class="link" href="#blog">blog</a>
-        <a class="link" href="#projects">projects</a>
-        <a class="link" href="#resume">resume/cv</a>
-      </nav>
-    </div>
-  </section>
+			</div>
+			<nav class="site-sections">
+				<a
+					class="link"
+					href="#blog"
+				>blog</a>
+				<a
+					class="link"
+					href="#projects"
+				>projects</a>
+				<a
+					class="link"
+					href="#resume"
+				>resume/cv</a>
+			</nav>
+		</div>
+	</section>
 </template>
 
 <script>
-import bg from '@/assets/mainBG.jpg';
-import SocialLinks from '@/components/SocialLinks.vue';
+import bg from "@/assets/mainBG.jpg";
+import SocialLinks from "@/components/SocialLinks.vue";
 
 export default {
-	name: 'Main',
+	name: "Main",
 	components: {
-		SocialLinks
+		SocialLinks,
 	},
 	data() {
 		return {
-			bg
+			bg,
 		};
 	},
 };
@@ -38,7 +53,7 @@ export default {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #FFF;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -55,7 +70,7 @@ export default {
 
 		.header {
 			font-size: 8rem;
-						font-family: 'le murmure';
+			font-family: "le murmure";
 
 			margin: 0;
 
@@ -81,11 +96,11 @@ export default {
 			display: flex;
 			flex-direction: column;
 			font-size: 3rem;
-			font-family: 'le murmure';
+			font-family: "le murmure";
 			text-align: right;
 			.link,
 			.link:visited {
-				color: #FFF;
+				color: #fff;
 			}
 		}
 	}
