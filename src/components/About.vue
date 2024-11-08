@@ -1,21 +1,32 @@
 <template>
 	<section class="about-me">
-			<div :style="{backgroundImage: `url(${headshot})`}" aria-label="headshot of Bryn" class="headshot" role="img" />
-			<div class="about-text">
-				<h2 class="heading outline-font">about me<span class="decoration" aria-hidden="true">—</span></h2>
-				<p class="description">I'm passionate about the a11y community and using tech to bring people together. I love using my expertise on accessibility and beautiful design to improve the experience of the web for all users. I take the ego out of work, bring the positivity, and believe in leading by example and through building my collaborators and teammates up together.<br><br/>I'm currently located in Colorado, but an avid traveler and spent many moons doing the "digital nomad" thing. I also love motorcycles, yoga, and D&D.<br/><br/>I'm employed full time as a Full Stack Developer, but I am available for freelance work as well. I’m happy to tackle new projects from the ground up or audit and revamp what you’ve already got. I'd love to work together so please feel free to <a href="mailto:bryn.codes@gmail.com" class="link rosegold">get in touch!</a>
-				</p>
+		<div
+			:style="{backgroundImage: `url(${headshot})`}"
+			aria-label="headshot of Bryn"
+			class="headshot"
+			role="img"
+		/>
+		<div class="about-text">
+			<h2 class="heading outline-font">about me<span
+					class="decoration"
+					aria-hidden="true"
+				>—</span></h2>
+			<p class="description">I'm passionate about the a11y community and using tech to bring people together. I love using my expertise on accessibility and beautiful design to improve the experience of the web for all users. I take the ego out of work, bring the positivity, and believe in leading by example and through building my collaborators and teammates up together.<br><br />I'm currently located in Colorado, but an avid traveler and spent many moons doing the "digital nomad" thing. I also love motorcycles, yoga, and D&D.<br /><br />I'm employed full time as a Full Stack Developer, but I am available for freelance work as well. I’m happy to tackle new projects from the ground up or audit and revamp what you’ve already got. I'd love to work together so please feel free to <a
+					href="mailto:bryn.codes@gmail.com"
+					class="link rosegold"
+				>get in touch!</a>
+			</p>
 		</div>
 	</section>
 </template>
 
 <script>
-import headshot from '@/assets/headshot.jpg';
+import headshot from "@/assets/headshot.jpg";
 
 export default {
 	data() {
 		return {
-			headshot
+			headshot,
 		};
 	},
 };
@@ -41,6 +52,12 @@ export default {
 		text-align: left;
 		.heading {
 			font-size: 6rem;
+			position: relative;
+			display: inline-block;
+			.decoration {
+				position: absolute;
+				left: calc(100% + 0.5ch);
+			}
 		}
 
 		.description {
@@ -48,7 +65,7 @@ export default {
 			max-width: 500px;
 		}
 	}
-	@media (max-width:$breakpoint-md ) {
+	@media (max-width: $breakpoint-md) {
 		margin-left: 0;
 		.headshot {
 			margin: 0 auto;
@@ -63,8 +80,8 @@ export default {
 		}
 	}
 	@media (max-width: $breakpoint-sm) {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-block: 2rem;
+		margin-inline: 5%;
 		.headshot {
 			height: 25vh;
 			width: 25vh;
@@ -77,5 +94,4 @@ export default {
 		}
 	}
 }
-
 </style>

@@ -1,27 +1,38 @@
 <template>
-	<footer class="footer" :class="{sticky}">
+	<footer
+		class="footer"
+		:class="{sticky}"
+	>
 		<div class="bryn">
-			<div>bryn newell <span class="decoration" aria-hidden="true">—</span></div>
+			<div>bryn newell <span
+					class="decoration"
+					aria-hidden="true"
+				>—</span></div>
 			<div class="year">2024</div>
 		</div>
 		<SocialLinks />
-		<p class="henry">design by <a class="link" href="https://henry.codes/" target="_blank" ref="noopener noreferrer">Henry Desroches</a></p>
+		<p class="henry">design by <a
+				class="link"
+				href="https://henry.codes/"
+				target="_blank"
+				ref="noopener noreferrer"
+			>Henry Desroches</a></p>
 	</footer>
 </template>
 
 <script>
-import SocialLinks from '@/components/SocialLinks.vue';
+import SocialLinks from "@/components/SocialLinks.vue";
 
 export default {
-	name: 'Main',
+	name: "Main",
 	components: {
-		SocialLinks
+		SocialLinks,
 	},
 	computed: {
 		sticky() {
 			return true;
-		}
-	}
+		},
+	},
 };
 </script>
 
@@ -33,7 +44,7 @@ export default {
 	.bryn {
 		align-items: center;
 		display: flex;
-		font-family: 'le murmure';
+		font-family: "le murmure";
 		font-size: 2rem;
 		grid-row: 1 / span 2;
 		text-align: left;
@@ -56,7 +67,7 @@ export default {
 	.henry {
 		grid-column: 2;
 		text-align: right;
-		margin-right: .75rem;
+		margin-right: 0.75rem;
 		a {
 			color: $rose-gold;
 		}
