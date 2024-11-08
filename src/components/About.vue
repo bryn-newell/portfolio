@@ -52,6 +52,12 @@ export default {
 		text-align: left;
 		.heading {
 			font-size: 6rem;
+			position: relative;
+			display: inline-block;
+			.decoration {
+				position: absolute;
+				left: calc(100% + 0.5ch);
+			}
 		}
 
 		.description {
@@ -74,8 +80,8 @@ export default {
 		}
 	}
 	@media (max-width: $breakpoint-sm) {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-block: 2rem;
+		margin-inline: 5%;
 		.headshot {
 			height: 25vh;
 			width: 25vh;

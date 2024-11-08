@@ -113,6 +113,7 @@ export default {
 
 <style lang="scss">
 #projects {
+	padding-inline: 5%;
 	margin-top: 12rem;
 	.heading {
 		text-align: left;
@@ -127,7 +128,6 @@ export default {
 		gap: 1rem 0;
 		max-width: 1000px;
 		margin: 0 auto 6rem auto;
-		padding: 0 1rem;
 		text-align: left;
 
 		.project-number {
@@ -148,13 +148,12 @@ export default {
 			align-self: center;
 			justify-self: end;
 			margin: 0;
-			padding-bottom: 18px;
+			white-space: nowrap;
 		}
 
 		.description {
 			max-width: 400px;
 			margin: 0;
-			margin-right: 4rem;
 		}
 
 		.tools {
@@ -193,7 +192,6 @@ export default {
 			}
 			.description {
 				grid-column: 2;
-				margin-right: 2rem;
 				max-width: 300px;
 			}
 			.project-link {
@@ -228,7 +226,6 @@ export default {
 			}
 			.description {
 				grid-column: 1 / span 2;
-				margin-right: 10px;
 				max-width: 100%;
 			}
 			.tools {

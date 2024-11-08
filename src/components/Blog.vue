@@ -24,6 +24,7 @@
 
 <style lang="scss">
 #blog {
+	padding-inline: 5%;
 	.heading {
 		margin-top: 5rem;
 		margin-bottom: 2rem;

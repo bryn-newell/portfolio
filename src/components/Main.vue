@@ -108,6 +108,12 @@ export default {
 		}
 	}
 
+	@media (min-width: $breakpoint-sm) {
+		.content .desc-container {
+			max-width: 80%;
+		}
+	}
+
 	@media (min-width: $breakpoint-md) {
 		background-position: center bottom;
 		background-size: cover;
@@ -116,7 +122,7 @@ export default {
 
 		.content {
 			align-items: flex-end;
-			background-color: transparent;
+			background: transparent;
 			justify-content: space-between;
 			flex-wrap: nowrap;
 			padding-block: 0;
@@ -126,6 +132,7 @@ export default {
 
 				.description {
 					margin-top: 0;
+					max-width: 75vw;
 				}
 			}
 

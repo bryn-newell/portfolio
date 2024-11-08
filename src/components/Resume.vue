@@ -27,10 +27,12 @@ export default {
 	align-items: baseline;
 	justify-content: space-between;
 	display: flex;
-	margin: 0 10% 10rem 10%;
+	flex-wrap: wrap;
+	margin: 12rem 5% 10rem 5%;
 
 	.heading {
-		margin-top: 3rem;
+		margin-top: 0rem;
+		margin-right: 4rem;
 		.sm-only {
 			display: none;
 		}
@@ -54,11 +56,15 @@ export default {
 	@media (max-width: $breakpoint-md) {
 		flex-direction: column;
 		align-items: center;
+		.heading {
+			margin-right: 0;
+		}
 	}
 	@media (max-width: $breakpoint-sm) {
+		margin-top: 5rem;
 		.heading {
+			margin-bottom: 2rem;
 			font-size: 8rem;
-			word-wrap: break-word;
 			.sm-only {
 				display: inline;
 			}
