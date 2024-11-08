@@ -1,8 +1,5 @@
 <template>
-	<section
-		class="main"
-		:style="{backgroundImage: `url(${bg})`}"
-	>
+	<section class="main">
 		<div class="content">
 			<h1 class="header">bryn newell<span
 					class="decoration"
@@ -50,28 +47,27 @@ export default {
 <style lang="scss">
 .main {
 	background-color: $light-pink;
-	background-position: center bottom;
+	background: url("@/assets/mainBG.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: 100% 0%;
+	background-size: contain;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	padding-bottom: 2rem;
-	height: 100vh;
 	width: 100vw;
 
 	.content {
-		align-items: flex-end;
+		background: linear-gradient(#e0a6a4, $light-pink);
 		display: flex;
-		justify-content: space-between;
-		padding: 0 5%;
+		padding: 5%;
+		flex-wrap: wrap;
+		margin-top: 20vh;
 
 		.header {
 			font-size: 8rem;
 			font-family: "le murmure";
-
 			margin: 0;
 
 			@media (max-width: 1098px) {
@@ -80,45 +76,66 @@ export default {
 				}
 			}
 		}
+
 		.desc-container {
 			align-items: flex-start;
 			display: flex;
 			flex-direction: column;
-			max-width: 35%;
 
 			.description {
 				font-size: 1rem;
 				text-align: left;
+				margin-top: 1rem;
 			}
 		}
 
 		.site-sections {
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			font-size: 3rem;
 			font-family: "le murmure";
 			text-align: right;
+			margin-top: 1rem;
+			width: 100%;
+
 			.link,
 			.link:visited {
 				color: #fff;
 			}
+			.link:not(:last-child) {
+				margin-right: 5%;
+			}
 		}
 	}
-	@media (max-width: $breakpoint-md) {
+
+	@media (min-width: $breakpoint-md) {
+		background-position: center bottom;
+		background-size: cover;
+		height: 100vh;
+		padding-bottom: 2rem;
+
 		.content {
-			flex-wrap: wrap;
+			align-items: flex-end;
+			background-color: transparent;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			padding-block: 0;
+
 			.desc-container {
-				max-width: 100%;
+				max-width: 35%;
+
 				.description {
-					margin-top: 1rem;
+					margin-top: 0;
 				}
 			}
+
 			.site-sections {
-				flex-direction: row;
-				margin-top: 1rem;
-				width: 100%;
-				.link:not(:last-child) {
-					margin-right: 5%;
+				flex-direction: column;
+				margin-top: 0;
+				width: auto;
+
+				.link {
+					margin-right: 0;
 				}
 			}
 		}
