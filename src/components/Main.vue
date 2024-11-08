@@ -45,6 +45,7 @@ export default {
 </script>
 
 <style lang="scss">
+// Note to self - this is the only file that is mobile first breakpoints
 .main {
 	background-color: $light-pink;
 	background: url("@/assets/mainBG.jpg");
