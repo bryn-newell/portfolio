@@ -57,7 +57,7 @@ export default {
 					title: "ACR",
 					date: "2021 - 2022",
 					description:
-						"A full redesign and rebuild for the American College of Rheumatology. Leveraging Contentstack, we developed a suite of reusable page templates and content models and using GraphQL, we automated the creation of dynamic pages. This allowed ACR to easily manage their content to better support doctors and clients with any number of condition pages and resources. The project began with a development team of five and gradually streamlined until I took over as the sole developer interacting with the client.",
+						"A full redesign and rebuild for the American College of Rheumatology. Leveraging Contentstack, we developed a suite of reusable page templates and content models and using GraphQL we automated the creation of dynamic pages. This allowed ACR to easily manage their content to better support doctors and clients with any number of condition pages and resources. The project began with a development team of five and gradually streamlined until I took over as the sole developer interacting with the client.",
 					tools: ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
 					link: "https://rheumatology.org/",
 				},
