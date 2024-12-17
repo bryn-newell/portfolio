@@ -39,32 +39,39 @@ export default {
 		return {
 			projects: [
 				{
+					title: "My Epic App",
+					date: "2021 - 2023",
+					description:
+						"A completely new design and rebuild of the Epic mobile application. In tandem with Vail Resort’s data and infrastructure, we introduced a new and innovative way for skiers to interact with individual ski resorts and manage their Epic pass. My primary focus was on developing the SVG map, including custom styling and animated interactions, as well the individual trails and lifts pages and data. ",
+					tools: ["React Native", "Bluetooth"],
+					link: "https://www.epicpass.com/app.aspx",
+				},
+				{
+					title: "Vidanta World",
+					date: "2023",
+					description:
+						"We built a new website for Vidanta World Resorts. While the site is not yet live (as of Fall/Winter 2024), I was a part of the core development team that initially built out all of the content models through Contentstack. These models were mapped to reusable pages and components, streamlining the site’s structure and content management. I also contributed to the initial styling of many shared components.",
+					tools: ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
+				},
+				{
+					title: "ACR",
+					date: "2021 - 2022",
+					description:
+						"A full redesign and rebuild for the American College of Rheumatology. Leveraging Contentstack, we developed a suite of reusable page templates and content models and using GraphQL, we automated the creation of dynamic pages. This allowed ACR to easily manage their content to better support doctors and clients with any number of condition pages and resources. The project began with a development team of five and gradually streamlined until I took over as the sole developer interacting with the client.",
+					tools: ["React", "Contentstack", "Apollo", "GraphQL", "CSS"],
+					link: "https://rheumatology.org/",
+				},
+				{
 					title: "Initiative",
-					date: "October 2019",
+					date: "Fall 2019",
 					description:
 						'A modern tabletop RPG companion application, built with love and some pals, aka the <a href="https://crit.fail/" target="_blank" ref="noopener noreferrer" class="link rosegold">Crit Fail Team</a>',
-					tools: ["React", "Axios", "Firebase", "JavaScript", "HTML", "SCSS"],
+					tools: ["React", "Axios", "Firebase", "SCSS"],
 					link: "https://github.com/xdesro/initiative-react",
 				},
 				{
-					title: "The Gift of Giving",
-					date: "March 2019",
-					description:
-						"The culmination capstone project of my coding education. An application to keep track of gift wish lists, for all occasions and shared between family and friends. The application provided a solution for those who have guests/gift givers who don't know each other, and don't want to duplicate gifts.",
-					tools: [
-						"React",
-						"GCP",
-						"Node",
-						"Express",
-						"JavaScript",
-						"HTML",
-						"SCSS",
-					],
-					link: "https://the-gift-of-giving.firebaseapp.com/",
-				},
-				{
 					title: "Food Truck Slack Bot",
-					date: "April 2019",
+					date: "Spring 2019",
 					description:
 						"A custom office wide Slack bot with custom AI to inform the company each day before lunch time which food trucks were going to be in the area.",
 					tools: [
@@ -78,32 +85,6 @@ export default {
 						"Google Calendar API",
 					],
 					link: "https://github.com/bryn-newell/food-truck-bot",
-				},
-				{
-					title: "Skill Base",
-					date: "May 2019",
-					description:
-						"An internal tool to help the company as a whole, and particularly the sales department, keep track of the different kinds of technological, professional, and soft skills of each employee. I designed and created mock ups for this project, as well as developed front and back end sections of the application from project inception to beta release.",
-					tools: [
-						"React",
-						"AWS",
-						"SQL",
-						"Invision Studio",
-						"D3",
-						"Node",
-						"Express",
-						"JavaScript",
-						"HTML",
-						"SCSS",
-					],
-				},
-				{
-					title: "Techtonic Website",
-					date: "June 2019",
-					description:
-						"The Techtonic website was getting an overhaul and I was tasked to re-create as many of the existing pages as possible, using an entirely new UI library and adjusting all the styles for a design uplift, while the main team updated our CMS. As I worked on this project I also began to build an internal component library, with specific style guidelines applied to be used company-wide on all future projects.",
-					tools: ["React", "Docker", "Gatsby", "Butter", "AntD", "SCSS"],
-					link: "https://www.techtonic.com/",
 				},
 			],
 		};
