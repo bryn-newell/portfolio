@@ -1,5 +1,41 @@
 <template>
 	<section class="main">
+		<img
+			:src="bg"
+			class="header-image"
+			alt=""
+		/>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			class="image-fade"
+		>
+			<defs>
+				<linearGradient
+					id="lgrad"
+					x2="0"
+					y2="1"
+				>
+					<stop
+						offset="85%"
+						stop-color="white"
+					/>
+					<stop
+						offset="100%"
+						stop-color="black"
+					/>
+				</linearGradient>
+				<mask
+					id="fade"
+					maskContentUnits="objectBoundingBox"
+				>
+					<rect
+						width="1"
+						height="1"
+						fill="url(#lgrad)"
+					/>
+				</mask>
+			</defs>
+		</svg>
 		<div class="content">
 			<h1 class="header">bryn newell<span
 					class="decoration"
@@ -47,24 +83,30 @@ export default {
 <style lang="scss">
 // Note to self - this is the only file that is mobile first breakpoints
 .main {
-	background-color: $light-pink;
-	background: url("@/assets/mainBG.jpg");
-	background-repeat: no-repeat;
-	background-position: 100% 0%;
-	background-size: contain;
+	background: linear-gradient(#e0a6a4, $light-pink);
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-end;
+	position: relative;
 	width: 100vw;
 
+	.header-image {
+		height: 25vh;
+		mask-image: url(#fade);
+		object-fit: cover;
+		object-position: 0 45%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
 	.content {
-		background: linear-gradient(#e0a6a4, $light-pink);
 		display: flex;
 		padding: 5%;
+		padding-top: 5vh;
 		flex-wrap: wrap;
-		margin-top: 20vh;
 
 		.header {
 			font-size: 8rem;
@@ -116,10 +158,17 @@ export default {
 	}
 
 	@media (min-width: $breakpoint-md) {
+		background: url("@/assets/mainBG.jpg");
+		background-repeat: no-repeat;
 		background-position: center bottom;
 		background-size: cover;
 		height: 100vh;
 		padding-bottom: 2rem;
+
+		.header-image,
+		.image-fade {
+			display: none;
+		}
 
 		.content {
 			align-items: flex-end;
