@@ -1,10 +1,9 @@
 <template>
 	<section class="about-me">
-		<div
-			:style="{backgroundImage: `url(${headshot})`}"
-			aria-label="headshot of Bryn"
+		<img
+			:src="headshot"
+			alt="headshot of bryn"
 			class="headshot"
-			role="img"
 		/>
 		<div class="about-text">
 			<h2 class="heading outline-font">about me<span
@@ -40,9 +39,8 @@ export default {
 
 	.headshot {
 		border-radius: 100%;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 70% 0;
+		object-fit: cover;
+		object-position: 70% 0;
 		height: 40vh;
 		margin-right: 6rem;
 		width: 40vh;
