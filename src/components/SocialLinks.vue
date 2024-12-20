@@ -9,7 +9,7 @@
 			<github class="logo" />
 		</a>
 		<a
-			href="https://bsky.app/profile/bryn-codes.bsky.social"
+			href="https://bsky.app/profile/bryn.codes"
 			target="_blank"
 			ref="noopener noreferrer"
 		>
