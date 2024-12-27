@@ -40,7 +40,7 @@ export default {
 .footer {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	margin: 0 10%;
+	margin: 0 5%;
 	.bryn {
 		align-items: center;
 		display: flex;

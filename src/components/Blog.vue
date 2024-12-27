@@ -31,7 +31,7 @@
 	}
 
 	.posts {
-		font-size: 2.25rem;
+		font-size: $step-2;
 		font-weight: 500;
 		max-width: 850px;
 		margin: 0 auto;
@@ -49,19 +49,14 @@
 			color: $rose-gold;
 		}
 	}
-	@media (max-width: $breakpoint-md) {
-		.posts {
-			font-size: 2rem;
-		}
-	}
 
 	@media (max-width: $breakpoint-sm) {
 		.heading {
-			font-size: 8rem;
 			margin-top: 2rem;
 		}
 		.posts {
-			font-size: 1.5rem;
+			// to do - find a different step since i still want it smaller on mobile
+			font-size: $step-1;
 		}
 	}
 }
