@@ -113,13 +113,13 @@ export default {
 
 		.project-number {
 			align-self: center;
-			font-size: 12rem;
+			font-size: $step-10;
 			grid-row: 1 / span 3;
 			margin: 0 6rem 0 3rem;
 		}
 
 		.title {
-			font-size: 6rem;
+			font-size: $step-7;
 			font-family: "Le Murmure";
 			margin: 0;
 			max-width: 520px;
@@ -148,7 +148,8 @@ export default {
 		}
 
 		.project-link {
-			font-size: 2rem;
+			// to do - i feel like this needs a 2.5
+			font-size: $step-2;
 			color: $rose-gold;
 			font-family: "le murmure";
 			.decoration {
@@ -164,39 +165,29 @@ export default {
 		.project {
 			.project-number {
 				align-self: flex-start;
-				font-size: 10rem;
 				grid-row: 1 / span 2;
 				margin: 0 1rem 0 1rem;
-			}
-			.title {
-				font-size: 5rem;
 			}
 			.description {
 				grid-column: 2;
 				max-width: 300px;
 			}
 			.project-link {
-				font-size: 1.5rem;
 				grid-column: 2;
 			}
 		}
 	}
 	@media (max-width: $breakpoint-sm) {
 		margin-top: 5rem;
-		.heading {
-			font-size: 8rem;
-		}
 		.project {
 			grid-template-columns: 1fr 2fr 1fr;
 			.project-number {
-				font-size: 6rem;
 				grid-column: 1;
 				grid-row: 1;
 				line-height: 6rem;
 				margin: 0;
 			}
 			.title {
-				font-size: 4rem;
 				grid-column: 2 / span 2;
 			}
 			.date {

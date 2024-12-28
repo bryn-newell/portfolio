@@ -35,7 +35,7 @@ export default {
 .about-me {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 5rem 0 8rem 18%;
+	margin: 5rem 10% 8rem 10%;
 
 	.headshot {
 		border-radius: 100%;
@@ -49,9 +49,10 @@ export default {
 	.about-text {
 		text-align: left;
 		.heading {
-			font-size: 6rem;
+			font-size: $step-8;
 			position: relative;
 			display: inline-block;
+			margin-top: 3rem;
 			.decoration {
 				position: absolute;
 				left: calc(100% + 0.5ch);
@@ -60,7 +61,7 @@ export default {
 
 		.description {
 			color: #000;
-			max-width: 500px;
+			max-width: 600px;
 		}
 	}
 	@media (max-width: $breakpoint-md) {

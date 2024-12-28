@@ -64,7 +64,6 @@ export default {
 		margin-top: 5rem;
 		.heading {
 			margin-bottom: 2rem;
-			font-size: 8rem;
 			.sm-only {
 				display: inline;
 			}

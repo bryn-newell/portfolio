@@ -109,11 +109,10 @@ export default {
 		flex-wrap: wrap;
 
 		.header {
-			font-size: 6rem;
 			font-family: "le murmure";
 			margin: 0;
 
-			@media (max-width: 1098px) {
+			@media (max-width: 1230px) {
 				.decoration {
 					display: none;
 				}
@@ -152,13 +151,8 @@ export default {
 	}
 
 	@media (min-width: $breakpoint-sm) {
-		.content {
-			.header {
-				font-size: 8rem;
-			}
-			.desc-container {
-				max-width: 80%;
-			}
+		.content .desc-container {
+			max-width: 80%;
 		}
 	}
 
