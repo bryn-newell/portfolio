@@ -56,9 +56,9 @@ export default {
 		padding-bottom: 4px;
 	}
 	.social-links {
-		text-align: right;
+		justify-self: end;
 		@media (max-width: $breakpoint-sm) {
-			text-align: center;
+			justify-content: center;
 		}
 	}
 	.logo path {

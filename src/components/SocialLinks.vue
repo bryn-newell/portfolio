@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss">
 .social-links {
+	display: flex;
 	a {
 		margin: 0 0.75rem;
 	}

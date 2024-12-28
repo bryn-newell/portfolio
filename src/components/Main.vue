@@ -112,7 +112,7 @@ export default {
 			font-family: "le murmure";
 			margin: 0;
 
-			@media (max-width: 1098px) {
+			@media (max-width: 1230px) {
 				.decoration {
 					display: none;
 				}
