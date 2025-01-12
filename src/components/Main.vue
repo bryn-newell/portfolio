@@ -5,37 +5,6 @@
 			class="header-image"
 			alt=""
 		/>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			class="image-fade"
-		>
-			<defs>
-				<linearGradient
-					id="lgrad"
-					x2="0"
-					y2="1"
-				>
-					<stop
-						offset="85%"
-						stop-color="white"
-					/>
-					<stop
-						offset="100%"
-						stop-color="black"
-					/>
-				</linearGradient>
-				<mask
-					id="fade"
-					maskContentUnits="objectBoundingBox"
-				>
-					<rect
-						width="1"
-						height="1"
-						fill="url(#lgrad)"
-					/>
-				</mask>
-			</defs>
-		</svg>
 		<div class="content">
 			<h1 class="header">bryn newell<span
 					class="decoration"
@@ -94,7 +63,7 @@ export default {
 
 	.header-image {
 		height: 25vh;
-		mask-image: url(#fade);
+		mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 		object-fit: cover;
 		object-position: 0 45%;
 		position: absolute;
